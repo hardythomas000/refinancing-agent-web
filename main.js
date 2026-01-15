@@ -39,12 +39,76 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize Timeline Countdown
     initTimelineCountdown();
 
-    // Initialize Reset Button
+    // Initialize Bottom Navigation
+    initBottomNav();
+});
+
+// Bottom Navigation Injection & Logic
+function initBottomNav() {
+    if (document.querySelector('.bottom-nav')) return;
+
+    const nav = document.createElement('nav');
+    nav.className = 'bottom-nav';
+
+    // Get current filename to highlight active link
+    const path = window.location.pathname;
+    const page = path.split("/").pop() || 'index.html';
+
+    nav.innerHTML = `
+        <a href="index.html" class="bottom-nav-item ${page === 'index.html' || page === '' ? 'active' : ''}">
+            <span class="bottom-nav-icon">🏠</span>
+            <span class="bottom-nav-label" data-i18n="nav-dashboard">Dashboard</span>
+        </a>
+        <a href="timeline.html" class="bottom-nav-item ${page === 'timeline.html' ? 'active' : ''}">
+            <span class="bottom-nav-icon">📅</span>
+            <span class="bottom-nav-label" data-i18n="nav-timeline">Timeline</span>
+        </a>
+        <a href="bank-checklist.html" class="bottom-nav-item ${page === 'bank-checklist.html' ? 'active' : ''}">
+            <span class="bottom-nav-icon">✅</span>
+            <span class="bottom-nav-label" data-i18n="nav-checklist">Checklist</span>
+        </a>
+        <a href="visa-checklist.html" class="bottom-nav-item ${page === 'visa-checklist.html' ? 'active' : ''}">
+            <span class="bottom-nav-icon">🛂</span>
+            <span class="bottom-nav-label" data-i18n="nav-visa-checklist">Visa</span>
+        </a>
+        <button class="bottom-nav-item" id="bottomNavMore">
+            <span class="bottom-nav-icon">⋯</span>
+            <span class="bottom-nav-label" data-i18n="nav-more">More</span>
+        </button>
+    `;
+
+    document.body.appendChild(nav);
+
+    // Initial translation for injected items
+    const currentLang = localStorage.getItem('expatFinanceLang') || 'en';
+    const translationElements = nav.querySelectorAll('[data-i18n]');
+    translationElements.forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[currentLang] && translations[currentLang][key]) {
+            el.innerHTML = translations[currentLang][key];
+        }
+    });
+
+    // Add event listener for "More" button
+    const bottomNavMore = document.getElementById('bottomNavMore');
+    if (bottomNavMore) {
+        bottomNavMore.addEventListener('click', function () {
+            const navMenu = document.getElementById('navMenu');
+            const navToggle = document.getElementById('navToggle');
+            if (navMenu && navToggle) {
+                navMenu.classList.add('active');
+                navToggle.classList.add('active');
+            }
+        });
+    }
+
+    // Initialize Reset Button if on a checklist page
     const resetBtn = document.getElementById('resetChecklist');
     if (resetBtn) {
         resetBtn.addEventListener('click', resetChecklist);
     }
-});
+}
+
 
 // Metric Explanations Modal Logic
 function initMetricModals() {
@@ -262,6 +326,17 @@ function setLanguage(lang) {
 
     // Update dynamic elements that need re-translation
     updateProgress();
+
+    // Update bottom nav translations
+    const bottomNav = document.querySelector('.bottom-nav');
+    if (bottomNav) {
+        bottomNav.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.dataset.i18n;
+            if (translations[lang] && translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
+            }
+        });
+    }
 }
 
 const translations = {
@@ -274,6 +349,7 @@ const translations = {
         'nav-visa': 'Visa Options',
         'nav-property': 'Property Managers',
         'nav-indo-guide': 'Indo Guide',
+        'nav-more': 'More',
         'hero-badge': 'May 2026 Departure',
         'hero-badge-lenders': 'Investment Loans',
         'hero-badge-checklist': 'Preparation Guide',
@@ -668,6 +744,7 @@ const translations = {
         'nav-visa': 'Opsi Visa',
         'nav-property': 'Pengelola Properti',
         'nav-indo-guide': 'Panduan RI',
+        'nav-more': 'Lainnya',
         'hero-badge': 'Keberangkatan Mei 2026',
         'hero-badge-lenders': 'Pinjaman Investasi',
         'hero-badge-checklist': 'Panduan Persiapan',
