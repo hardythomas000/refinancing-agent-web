@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Preparation Checklist | The Indonesia Move</title>
+    <meta name="description"
+        content="What to tell banks, required documents, and key questions for refinancing before moving overseas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🌴</span>
+                <span class="logo-text">The Indonesia Move</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav-dashboard">Dashboard</a></li>
+                <li><a href="timeline.html" class="nav-link" data-i18n="nav-timeline">Timeline</a></li>
+                <li><a href="expat-lenders.html" class="nav-link" data-i18n="nav-lenders">Lenders</a></li>
+                <li><a href="bank-checklist.html" class="nav-link active" data-i18n="nav-checklist">Bank Checklist</a>
+                </li>
+                <li><a href="visa-checklist.html" class="nav-link" data-i18n="nav-visa-checklist">Visa Checklist</a>
+                </li>
+                <li><a href="tax-treaty.html" class="nav-link" data-i18n="nav-tax">Tax Treaty</a></li>
+                <li><a href="visa-options.html" class="nav-link" data-i18n="nav-visa">Visa Options</a></li>
+                <li><a href="property-managers.html" class="nav-link" data-i18n="nav-property">Property Managers</a>
+                </li>
+                <li><a href="indonesia-guide.html" class="nav-link" data-i18n="nav-indo-guide">Indo Guide</a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">🇺🇸 English</button>
+                    <button class="lang-btn" data-lang="id">🇮🇩 Bahasa</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero" style="padding-bottom: 2rem;">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero-badge-checklist">Preparation Guide</span>
+                <h1 data-i18n="checklist-title">Bank Prep Checklist</h1>
+                <p class="hero-subtitle" data-i18n="checklist-subtitle">What to say, what documents to gather, and
+                    questions to ask lenders.</p>
+            </div>
+        </section>
+
+        <!-- Progress -->
+        <section class="section">
+            <div class="checklist-header">
+                <div class="progress-container">
+                    <span class="progress-label" data-i18n="progress-label">Your Progress:</span> <span
+                        id="checklistProgress">0 of 0 completed</span>
+                    <div class="progress-bar-bg">
+                        <div id="progressBar" class="progress-bar-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                <button id="resetChecklist" class="reset-btn" data-i18n="reset-btn">Reset All</button>
+            </div>
+        </section>
+
+        <!-- What To Tell Banks -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="bank-talk-title">💬 What To Tell Banks</h2>
+
+            <div class="content-section">
+                <div class="alert-card"
+                    style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); margin-bottom: var(--spacing-lg);">
+                    <div class="alert-icon">💡</div>
+                    <div class="alert-content">
+                        <h3 style="color: var(--accent);" data-i18n="strategic-title">Be Honest But Strategic</h3>
+                        <p data-i18n="strategic-desc">When talking to lenders, be upfront about your situation. Honesty
+                            protects you legally, and
+                            rental income can actually <strong>boost your serviceability</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4 data-i18n="points-title">Key Talking Points</h4>
+                        <ul class="checklist-items no-save">
+                            <li data-i18n="point-1">"I'm moving overseas temporarily (1-2 years) and converting my home
+                                to a rental
+                                property."</li>
+                            <li data-i18n="point-2">"I want to refinance to an investment loan and add $15k cash-out for
+                                relocation
+                                costs."</li>
+                            <li data-i18n="point-3">"My current LVR is 42%—I have excellent equity in the property."
+                            </li>
+                            <li data-i18n="point-4">"I have a rental appraisal showing expected weekly rent of $670/week
+                                ($2,900/month)."
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4 data-i18n="why-helps-title">Why This Helps</h4>
+                        <ul data-i18n="why-helps-list">
+                            <li><strong>Rental income counts:</strong> Banks typically use 80% of expected rental income
+                                for serviceability</li>
+                            <li><strong>Your wife not working:</strong> Less impactful when rental income is factored in
+                            </li>
+                            <li><strong>Low LVR:</strong> 42% puts you in a strong negotiating position</li>
+                            <li><strong>Temporary move:</strong> Shows you intend to return (better than permanent
+                                emigration)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-card warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <h3 data-i18n="apply-before-title">Apply BEFORE You Leave</h3>
+                    <p data-i18n="apply-before-desc">Refinance while you still have Australian employment. Once overseas
+                        with no local income,
+                        applications become much harder. Aim to complete refinancing <strong>3 months before
+                            departure</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents Checklist -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="docs-checklist-title">📄 Required Documents</h2>
+
+            <ul class="checklist">
+                <li class="checklist-item completed">
+                    <div class="checklist-checkbox checked" data-id="doc-payslips"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-payslips-text">Recent payslips (last 3 months)
+                            </div>
+                            <span class="status-badge done" data-i18n="status-done">Verified</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-payslips-note">Oct 2025 to Jan 2026 found. Complete.
+                        </div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 01_payslips</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="doc-taxreturns"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-taxreturns-text">Tax returns & NOA (last 2 years)
+                            </div>
+                            <span class="status-badge missing" data-i18n="status-missing">Missing</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-taxreturns-note">Get from: myGov > ATO > Tax return
+                            history & Notices of Assessment
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="doc-loanstatements"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-loanstatements-text">Current loan statements
+                            </div>
+                            <span class="status-badge missing" data-i18n="status-missing">Missing</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-loanstatements-note">Download recent statements from
+                            St George internet banking</div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 02_loan_statements</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="doc-id"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-id-text">ID documents (driver's license +
+                                passport)</div>
+                            <span class="status-badge review" data-i18n="status-review">Review Required</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-id-note">Found 2019 copies for Hardy & Noor. Verify
+                            if still current.</div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 04_id_documents</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="doc-rental"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-rental-text">Rental appraisals (from 2-3
+                                managers)</div>
+                            <span class="status-badge missing" data-i18n="status-missing">Missing</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-rental-note">Folder 06 contains contracts only; need
+                            to contact property managers
+                            for appraisals.</div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 03_property_docs</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="doc-bankstatements"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-bankstatements-text">Bank statements (last 3-6
+                                months)</div>
+                            <span class="status-badge missing" data-i18n="status-missing">Missing</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-bankstatements-note">Download from St George internet
+                            banking > Export statements.</div>
+                    </div>
+                </li>
+                <li class="checklist-item completed">
+                    <div class="checklist-checkbox checked" data-id="doc-property"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-property-text">Property details (Rates, Water,
+                                Strata)</div>
+                            <span class="status-badge done" data-i18n="status-done">Verified</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-property-note">10+ Council Rates (Gold Coast) &
+                            Strata docs (Oceanic Lodge) found.</div>
+                        <div class="folder-path">
+                            <span class="folder-icon">📂</span> 03_property_docs <span class="text-muted">|</span>
+                            <span class="folder-icon">📂</span> 07_strata_bodycorp
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item completed">
+                    <div class="checklist-checkbox checked" data-id="doc-insurance"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-insurance-text">Building Insurance (Certificate
+                                of Currency)</div>
+                            <span class="status-badge done" data-i18n="status-done">Verified</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-insurance-note">14 PDFs found (Budget Direct).
+                            Policies for Landlord & Contents.</div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 06_insurance</div>
+                    </div>
+                </li>
+                <li class="checklist-item completed">
+                    <div class="checklist-checkbox checked" data-id="doc-valuation"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-valuation-text">Property Valuation</div>
+                            <span class="status-badge done" data-i18n="status-done">Verified</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-valuation-note">Property Report for 12/43 North St
+                            found (Domain/RPData).</div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 08_property_valuations</div>
+                    </div>
+                </li>
+                <li class="checklist-item completed">
+                    <div class="checklist-checkbox checked" data-id="doc-utilities"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="doc-utilities-text">Utility Bills (Proof of Address)
+                            </div>
+                            <span class="status-badge done" data-i18n="status-done">Verified</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="doc-utilities-note">Recent Energy billing details found
+                            (Proof of Address).</div>
+                        <div class="folder-path"><span class="folder-icon">📂</span> 05_utility_bills</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Questions To Ask -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="questions-title">❓ Questions To Ask Lenders</h2>
+
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-rate"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-rate-text">"What's your investment variable rate for my
+                            LVR (42%)?"</div>
+                        <div class="checklist-note" data-i18n="q-rate-note">Push for discount—your low LVR is strong
+                            leverage</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-cashout"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-cashout-text">"Include the $15k relocation cash-out in
+                            my application"</div>
+                        <div class="checklist-note" data-i18n="q-cashout-note">Confirm maximum cash-out available</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-fees"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-fees-text">"What fees apply to convert/refinance?"
+                        </div>
+                        <div class="checklist-note" data-i18n="q-fees-note">Application fee, valuation, settlement,
+                            discharge</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-overseas"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-overseas-text">"Will my overseas move affect loan
+                            approval?"</div>
+                        <div class="checklist-note" data-i18n="q-overseas-note">Some lenders more expat-friendly than
+                            others</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-offset"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-offset-text">"Does the investment loan include an
+                            offset account?"</div>
+                        <div class="checklist-note" data-i18n="q-offset-note">Rent payments can sit here to reduce
+                            interest daily</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-timeline"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-timeline-text">"What's the typical approval timeline?"
+                        </div>
+                        <div class="checklist-note" data-i18n="q-timeline-note">Plan for 2-4 weeks; some are faster
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="q-cashback"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="q-cashback-text">"Are there any cashback offers currently
+                            available?"</div>
+                        <div class="checklist-note" data-i18n="q-cashback-note">Some lenders offer up to $5k for
+                            refinancing</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section">
+            <div class="timeline-header">
+                <h2 class="section-title" style="margin-bottom: 0;" data-i18n="refi-timeline-title">📅 Refinancing
+                    Timeline</h2>
+                <div class="today-display" data-i18n="today-display">Today is <strong
+                        id="currentDateDisplay">...</strong></div>
+            </div>
+
+            <div class="timeline-status">
+                <div class="status-text" data-i18n="move-scheduled">Your move is scheduled for <strong>May 2026</strong>
+                </div>
+                <div id="overallCountdown" class="countdown-badge" data-i18n="calculating">Calculating time...</div>
+            </div>
+
+            <div class="content-section">
+                <div class="timeline-header">
+                    <h2 data-i18n="timeline-3m-title">3 Months Before Moving</h2>
+                    <span class="due-month" data-i18n="timeline-3m-target">Target: February 2026</span>
+                </div>
+                <div id="countdown-3m" class="countdown-badge" style="margin-bottom: 1rem;">...</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-research"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-research-text">Research and compare lenders</div>
+                            <div class="checklist-note" data-i18n="t-research-note">Use Canstar, Finder, or mortgage
+                                broker</div>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-currentlender"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-currentlender-text">Call current lender first</div>
+                            <div class="checklist-note" data-i18n="t-currentlender-note">Ask about converting to
+                                investment loan with cash-out</div>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-quotes"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-quotes-text">Get quotes from 3-5 lenders</div>
+                            <div class="checklist-note" data-i18n="t-quotes-note">Compare rates, fees, features,
+                                approval times</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <div class="timeline-header">
+                    <h2 data-i18n="timeline-2m-title">2 Months Before Moving</h2>
+                    <span class="due-month" data-i18n="timeline-2m-target">Target: March 2026</span>
+                </div>
+                <div id="countdown-2m" class="countdown-badge" style="margin-bottom: 1rem;">...</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-apply"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-apply-text">Submit loan application</div>
+                            <div class="checklist-note" data-i18n="t-apply-note">While you still have Australian
+                                employment!</div>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-valuation"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-valuation-text">Property valuation arranged by
+                                lender</div>
+                            <div class="checklist-note" data-i18n="t-valuation-note">Usually $200-300; some lenders
+                                cover this</div>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-approval"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-approval-text">Receive formal loan approval</div>
+                            <div class="checklist-note" data-i18n="t-approval-note">Review all terms and conditions
+                                carefully</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <div class="timeline-header">
+                    <h2 data-i18n="timeline-1m-title">1 Month Before Moving</h2>
+                    <span class="due-month" data-i18n="timeline-1m-target">Target: April 2026</span>
+                </div>
+                <div id="countdown-1m" class="countdown-badge" style="margin-bottom: 1rem;">...</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-settlement"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-settlement-text">Complete loan settlement</div>
+                            <div class="checklist-note" data-i18n="t-settlement-note">Old loan discharged, new loan
+                                starts</div>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-cashout"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-cashout-text">Receive $15k cash-out funds</div>
+                            <div class="checklist-note" data-i18n="t-cashout-note">Usually deposited to nominated
+                                account</div>
+                        </div>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checklist-checkbox" data-id="t-autopay"></div>
+                        <div class="checklist-content">
+                            <div class="checklist-text" data-i18n="t-autopay-text">Set up automatic loan payments</div>
+                            <div class="checklist-note" data-i18n="t-autopay-note">From Australian account where rent
+                                will be deposited</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Property Manager Selection -->
+        <section class="section">
+            <h2 class="section-title">🏠 Property Manager Selection</h2>
+
+            <div class="content-section">
+                <h2>Top Southport Agencies for Overseas Landlords</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="pm-col-agency">Agency</th>
+                                <th data-i18n="pm-col-rating">Rating</th>
+                                <th data-i18n="pm-col-fee">Fee</th>
+                                <th data-i18n="pm-col-best">Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Rent360</strong></td>
+                                <td>5.0 ⭐</td>
+                                <td>~6% + GST</td>
+                                <td data-i18n="pm-rent360-best">Remote management, excellent comms</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pacific Property</strong></td>
+                                <td>High</td>
+                                <td>7-10%</td>
+                                <td data-i18n="pm-pacific-best">"Hands-free" P5 Protocol for overseas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kollosche</strong></td>
+                                <td>High</td>
+                                <td>Premium</td>
+                                <td data-i18n="pm-kollosche-best">Luxury properties, overseas investors</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LJ Hooker Southport</strong></td>
+                                <td>Good</td>
+                                <td>7-10%</td>
+                                <td data-i18n="pm-ljh-best">Family-run, 10+ years experience</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 data-i18n="pm-questions-title">Questions for Property Managers</h3>
+                <ul>
+                    <li data-i18n="pm-q1">Do you have experience with overseas landlords?</li>
+                    <li data-i18n="pm-q2">How do you handle emergency repairs when I'm overseas?</li>
+                    <li data-i18n="pm-q3">What's your vacancy rate for 2-bed apartments in Southport?</li>
+                    <li data-i18n="pm-q4">Can I set an auto-approval limit for repairs (e.g., under $500)?</li>
+                    <li data-i18n="pm-q5">How are rent payments sent—direct deposit or through trust account?</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-i18n="checklist-footer">Last updated: January 2026 | For personal reference only—consult
+                professionals for advice</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

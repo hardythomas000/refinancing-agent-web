@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Checklist | The Indonesia Move</title>
+    <meta name="description"
+        content="Step-by-step guide and document checklist for the Spouse KITAS (E317) application process.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🌴</span>
+                <span class="logo-text">The Indonesia Move</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav-dashboard">Dashboard</a></li>
+                <li><a href="timeline.html" class="nav-link" data-i18n="nav-timeline">Timeline</a></li>
+                <li><a href="expat-lenders.html" class="nav-link" data-i18n="nav-lenders">Lenders</a></li>
+                <li><a href="bank-checklist.html" class="nav-link" data-i18n="nav-checklist">Bank Checklist</a></li>
+                <li><a href="visa-checklist.html" class="nav-link active" data-i18n="nav-visa-checklist">Visa
+                        Checklist</a></li>
+                <li><a href="tax-treaty.html" class="nav-link" data-i18n="nav-tax">Tax Treaty</a></li>
+                <li><a href="visa-options.html" class="nav-link" data-i18n="nav-visa">Visa Options</a></li>
+                <li><a href="property-managers.html" class="nav-link" data-i18n="nav-property">Property Managers</a>
+                </li>
+                <li><a href="indonesia-guide.html" class="nav-link" data-i18n="nav-indo-guide">Indo Guide</a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">🇺🇸 English</button>
+                    <button class="lang-btn" data-lang="id">🇮🇩 Bahasa</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero" style="padding-bottom: 2rem;">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="visa-check-hero-badge">Application Guide</span>
+                <h1 data-i18n="visa-check-title">Visa Application<br><span class="gradient-text">Checklist</span></h1>
+                <p class="hero-subtitle" data-i18n="visa-check-subtitle">Everything you need for the E317 Spouse KITAS,
+                    from documents to biometrics.</p>
+            </div>
+        </section>
+
+        <!-- Progress -->
+        <section class="section">
+            <div class="checklist-header">
+                <div class="progress-container">
+                    <span class="progress-label" data-i18n="progress-label">Your Progress:</span> <span
+                        id="checklistProgress">0 of 0 completed</span>
+                    <div class="progress-bar-bg">
+                        <div id="progressBar" class="progress-bar-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                <button id="resetChecklist" class="reset-btn" data-i18n="reset-btn">Reset All</button>
+            </div>
+        </section>
+
+        <!-- Strategic Talk -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="visa-talk-title">💬 Strategic Preparation</h2>
+
+            <div class="content-section">
+                <div class="alert-card"
+                    style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3); margin-bottom: var(--spacing-lg);">
+                    <div class="alert-icon">💡</div>
+                    <div class="alert-content">
+                        <h3 style="color: #10b981;" data-i18n="visa-strategy-title">The Spouse advantage</h3>
+                        <p data-i18n="visa-strategy-desc">Since you are married to a WNI, you are
+                            <strong>exempt</strong> from most employment-based visa hurdles. Your wife is your anchor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4 data-i18n="visa-action-wife-title">Action Items for Noor</h4>
+                        <ul class="checklist-items no-save">
+                            <li data-i18n="visa-action-wife-1">Register as a "Personal Sponsor" on evisa.imigrasi.go.id.
+                            </li>
+                            <li data-i18n="visa-action-wife-2">Ensure KTP and KK addresses match perfectly.</li>
+                            <li data-i18n="visa-action-wife-3">Verify bank statement shows at least $2,000 USD (IDR
+                                30jt+).</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4 data-i18n="visa-action-hardy-title">Action Items for Hardy</h4>
+                        <ul class="checklist-items no-save">
+                            <li data-i18n="visa-action-hardy-1">Verify passport has at least 18 months validity
+                                remaining.</li>
+                            <li data-i18n="visa-action-hardy-2">Get digital copies of Marriage Certificate (legalized).
+                            </li>
+                            <li data-i18n="visa-action-hardy-3">Prepare the kids' passports and birth certificates.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents Checklist -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="visa-docs-title">📄 Required Documents</h2>
+
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vdoc-marriage"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="vdoc-marriage-text">Marriage Certificate (Buku Nikah)
+                            </div>
+                            <span class="status-badge review" data-i18n="status-review">Review Required</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="vdoc-marriage-note">If married in AU, must be reported to
+                            KBRI/Immigration in Indo.</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vdoc-ktp"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="vdoc-ktp-text">Wife's KTP & KK</div>
+                            <span class="status-badge missing" data-i18n="status-missing">Missing Scans</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="vdoc-ktp-note">High-resolution color scans of front/back.
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vdoc-passports"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="vdoc-passports-text">Passports (Family)</div>
+                            <span class="status-badge missing" data-i18n="status-missing">Check Validity</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="vdoc-passports-note">Minimum 18 months remaining for
+                            Hardy; kids also need valid docs.</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vdoc-funds"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="vdoc-funds-text">Proof of Funds (Sponsor's Bank)
+                            </div>
+                            <span class="status-badge missing" data-i18n="status-missing">Missing</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="vdoc-funds-note">Last 3 months statements showing >$2,000
+                            USD equivalent.</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vdoc-photos"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-header">
+                            <div class="checklist-text" data-i18n="vdoc-photos-text">Digital Passport Photos</div>
+                            <span class="status-badge missing" data-i18n="status-missing">To Be Taken</span>
+                        </div>
+                        <div class="checklist-note" data-i18n="vdoc-photos-note">White or Red background (Check latest
+                            portal requirements).</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Application Steps -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="visa-steps-title">🚀 Application Process</h2>
+
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vstep-sponsor"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="vstep-sponsor-text">Noor registers as Personal Sponsor
+                        </div>
+                        <div class="checklist-note" data-i18n="vstep-sponsor-note">Must be done first on the evisa
+                            portal.</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vstep-apply"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="vstep-apply-text">Lodge E317 Application</div>
+                        <div class="checklist-note" data-i18n="vstep-apply-note">Submit all documents and pay the fee
+                            online.</div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vstep-evisa"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="vstep-evisa-text">Receive E-Visa (PDF)</div>
+                        <div class="checklist-note" data-i18n="vstep-evisa-note">Wait 5-10 working days for processing.
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vstep-arrival"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="vstep-arrival-text">Arrive in Indonesia</div>
+                        <div class="checklist-note" data-i18n="vstep-arrival-note">Enter on the E-Visa at Immigration.
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="checklist-checkbox" data-id="vstep-biometrics"></div>
+                    <div class="checklist-content">
+                        <div class="checklist-text" data-i18n="vstep-biometrics-text">Biometrics at Local Imigrasi</div>
+                        <div class="checklist-note" data-i18n="vstep-biometrics-note">Within 30 days of arrival to get
+                            physical KITAS.</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Post-Arrival Bonus -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="post-arrival-title">🏠 Post-Arrival Essentials</h2>
+            <div class="info-card">
+                <ul class="checklist-items no-save">
+                    <li data-i18n="post-1"><strong>Lapor Diri:</strong> Report to local police/community head (RT/RW).
+                    </li>
+                    <li data-i18n="post-2"><strong>Bank Account:</strong> Open BCA/Mandiri account using KITAS.</li>
+                    <li data-i18n="post-3"><strong>Driving License:</strong> Convert or apply for SIM A (Car) / SIM C
+                        (Motor).</li>
+                    <li data-i18n="post-4"><strong>SKTT:</strong> Get your Certificate of Residence from Civil Registry
+                        (Disdukcapil).</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-i18n="footer">Last updated: January 2026 | For personal reference only—consult professionals for
+                advice</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

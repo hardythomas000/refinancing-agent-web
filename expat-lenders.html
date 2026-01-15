@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expat-Friendly Lenders | The Indonesia Move</title>
+    <meta name="description"
+        content="Compare investment loan rates from lenders who work with Australian expats and overseas landlords.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🌴</span>
+                <span class="logo-text">The Indonesia Move</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav-dashboard">Dashboard</a></li>
+                <li><a href="timeline.html" class="nav-link" data-i18n="nav-timeline">Timeline</a></li>
+                <li><a href="expat-lenders.html" class="nav-link active" data-i18n="nav-lenders">Lenders</a></li>
+                <li><a href="bank-checklist.html" class="nav-link" data-i18n="nav-checklist">Bank Checklist</a></li>
+                <li><a href="visa-checklist.html" class="nav-link" data-i18n="nav-visa-checklist">Visa Checklist</a>
+                </li>
+                <li><a href="tax-treaty.html" class="nav-link" data-i18n="nav-tax">Tax Treaty</a></li>
+                <li><a href="visa-options.html" class="nav-link" data-i18n="nav-visa">Visa Options</a></li>
+                <li><a href="property-managers.html" class="nav-link" data-i18n="nav-property">Property Managers</a>
+                </li>
+                <li><a href="indonesia-guide.html" class="nav-link" data-i18n="nav-indo-guide">Indo Guide</a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">🇺🇸 English</button>
+                    <button class="lang-btn" data-lang="id">🇮🇩 Bahasa</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero" style="padding-bottom: 1rem;">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero-badge-lenders">Investment Loans</span>
+                <h1 data-i18n="lenders-title">Expat-Friendly<br><span class="gradient-text">Lenders</span></h1>
+                <p class="hero-subtitle" data-i18n="lenders-subtitle">Compare investment loan rates from lenders who
+                    work with overseas landlords.</p>
+            </div>
+        </section>
+
+        <!-- Your Position -->
+        <section class="section">
+            <div class="alert-card" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+                <div class="alert-icon">✅</div>
+                <div class="alert-content">
+                    <h3 style="color: var(--success);" data-i18n="pos-title">Your Strong Position</h3>
+                    <p data-i18n="pos-desc"><strong>LVR: 42.4%</strong> — You're well under the 80% threshold, meaning
+                        no Lenders Mortgage
+                        Insurance required. With this equity position, you have excellent negotiating power for
+                        competitive rates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Comparison Table -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="scenarios-title">Investment Loan Scenarios (With $15k Cash-Out)</h2>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="table-lender">Lender</th>
+                            <th data-i18n="table-type">Type</th>
+                            <th data-i18n="table-rate">Rate</th>
+                            <th data-i18n="table-amount">Loan Amount</th>
+                            <th data-i18n="table-payment">Weekly Payment</th>
+                            <th data-i18n="table-vs">vs Current</th>
+                            <th data-i18n="table-net">Net Position*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dim-row">
+                            <td data-i18n="current-loan-label">Current (Owner-Occ)</td>
+                            <td data-i18n="loan-type-var">Variable</td>
+                            <td>5.69%</td>
+                            <td>$260,617</td>
+                            <td>$367</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong data-i18n="lender-westpac">Westpac</strong> <span class="badge best"
+                                    data-i18n="badge-best">BEST</span></td>
+                            <td data-i18n="loan-type-inv-var">Investment Variable</td>
+                            <td>5.39%</td>
+                            <td>$275,617</td>
+                            <td>$372</td>
+                            <td>+$6/wk</td>
+                            <td class="positive">+$250/wk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="lender-cba">CBA</strong></td>
+                            <td data-i18n="loan-type-inv-var">Investment Variable</td>
+                            <td>5.69%</td>
+                            <td>$275,617</td>
+                            <td>$386</td>
+                            <td>+$19/wk</td>
+                            <td class="positive">+$237/wk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="lender-macquarie">Macquarie</strong></td>
+                            <td data-i18n="loan-type-inv-var">Investment Variable</td>
+                            <td>5.99%</td>
+                            <td>$275,617</td>
+                            <td>$400</td>
+                            <td>+$34/wk</td>
+                            <td class="positive">+$222/wk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="lender-gc">G&C Mutual Bank</strong></td>
+                            <td data-i18n="loan-type-fixed-3">Fixed 3yr</td>
+                            <td>4.85%</td>
+                            <td>$275,617</td>
+                            <td>~$353</td>
+                            <td>−$14/wk</td>
+                            <td class="positive">+$269/wk</td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n="lender-anz-nab">ANZ / NAB</strong></td>
+                            <td data-i18n="loan-type-fixed-2">Fixed 2yr Package</td>
+                            <td>5.19%</td>
+                            <td>$275,617</td>
+                            <td>~$365</td>
+                            <td>−$2/wk</td>
+                            <td class="positive">+$258/wk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note" data-i18n="table-note-lenders">*Net Position = Weekly rent ($670) − Weekly payment −
+                Management fees (~$47/wk).
+                Estimates based on 26.5 year term.</p>
+        </section>
+
+        <!-- Top Lenders Detail -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="top-lenders-title">Top Lenders for Your Situation</h2>
+
+            <div class="content-section">
+                <h2 data-i18n="westpac-title">🥇 Westpac — Best Overall for Expats</h2>
+                <div class="info-cards" style="margin-bottom: var(--spacing-lg);">
+                    <div class="info-card" data-i18n="westpac-details">
+                        <h4>Key Details</h4>
+                        <ul>
+                            <li>Investment Variable: 5.39%</li>
+                            <li>Good for overseas landlords</li>
+                            <li>Weekly payment: $372</li>
+                            <li>Net position: +$250/wk</li>
+                        </ul>
+                    </div>
+                    <div class="info-card" data-i18n="westpac-why">
+                        <h4>Why Choose Westpac</h4>
+                        <ul>
+                            <li>Competitive investment rates</li>
+                            <li>Large branch network</li>
+                            <li>Online-only Flexi First option</li>
+                            <li>Experienced with expat applications</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>Link:</strong> <a
+                        href="https://www.westpac.com.au/personal-banking/home-loans/investing-in-property/"
+                        target="_blank" style="color: var(--accent-primary);">Westpac Investment Property Loans →</a>
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2 data-i18n="macquarie-title">🥈 Macquarie Bank — Best Non-Major</h2>
+                <div class="info-cards" style="margin-bottom: var(--spacing-lg);">
+                    <div class="info-card" data-i18n="macquarie-details">
+                        <h4>Key Details</h4>
+                        <ul>
+                            <li>Variable Rate: 5.34% (LVR ≤70%)</li>
+                            <li>Investment Rate: ~5.99%</li>
+                            <li>Strong customer service</li>
+                            <li>No monthly fees on some products</li>
+                        </ul>
+                    </div>
+                    <div class="info-card" data-i18n="macquarie-why">
+                        <h4>Why Choose Macquarie</h4>
+                        <ul>
+                            <li>Excellent digital banking</li>
+                            <li>Known for service quality</li>
+                            <li>Competitive rates for low LVR</li>
+                            <li>Good offset account options</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>Link:</strong> <a href="https://www.macquarie.com.au/home-loans/investor-home-loans.html"
+                        target="_blank" style="color: var(--accent-primary);">Macquarie Investor Home Loans →</a></p>
+            </div>
+
+            <div class="content-section">
+                <h2 data-i18n="gc-title">🥉 G&C Mutual Bank — Best Fixed Rate</h2>
+                <div class="info-cards" style="margin-bottom: var(--spacing-lg);">
+                    <div class="info-card" data-i18n="gc-details">
+                        <h4>Key Details</h4>
+                        <ul>
+                            <li>3 Year Fixed: 4.85%</li>
+                            <li>Variable: 4.99% (essential workers)</li>
+                            <li>Lowest rates in market</li>
+                            <li>Customer-owned bank</li>
+                        </ul>
+                    </div>
+                    <div class="info-card" data-i18n="gc-why">
+                        <h4>Why Choose G&C</h4>
+                        <ul>
+                            <li>Lowest fixed rates available</li>
+                            <li>Lock in before rate rises</li>
+                            <li>Community-focused bank</li>
+                            <li>Special ends Feb 15, 2026</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="color: var(--warning);" data-i18n="gc-note"><strong>⚠️ Note:</strong> Fixed rate means you
+                    can't make extra
+                    repayments without fees. Less flexible but predictable.</p>
+            </div>
+        </section>
+
+        <!-- Key Insights -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="key-insights-title">Key Insights for Refinancers</h2>
+            <div class="card-grid">
+                <div class="info-card">
+                    <h4 data-i18n="insight-negotiation-title">💡 Rate Negotiation</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="insight-negotiation-desc">New
+                        customers typically get the best
+                        rates. With LVR <70%, expect to negotiate 10-15 basis points off advertised rates.</p>
+                </div>
+                <div class="info-card">
+                    <h4 data-i18n="insight-cashback-title">💰 Cashback Offers</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="insight-cashback-desc">Some
+                        lenders are offering cashbacks up
+                        to $5,000 to attract new customers. Ask about current promotions.</p>
+                </div>
+                <div class="info-card">
+                    <h4 data-i18n="insight-timing-title">⏰ Timing</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="insight-timing-desc">RBA rate
+                        hikes expected Feb 2026.
+                        Locking in current rates (especially fixed) may be advantageous.</p>
+                </div>
+                <div class="info-card">
+                    <h4 data-i18n="insight-fv-title">📊 Fixed vs Variable</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="insight-fv-desc">Fixed rates
+                        are currently slightly
+                        cheaper than variable but this gap is narrowing as lenders anticipate increases.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="quick-links-title">Lender Application Links</h2>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="col-lender">Lender</th>
+                            <th data-i18n="col-link">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ANZ Refinancing</td>
+                            <td><a href="https://www.anz.com.au/personal/home-loans/refinance/" target="_blank"
+                                    style="color: var(--accent-primary);">anz.com.au/refinance →</a></td>
+                        </tr>
+                        <tr>
+                            <td>NAB Refinancing</td>
+                            <td><a href="https://www.nab.com.au/personal/home-loans/refining" target="_blank"
+                                    style="color: var(--accent-primary);">nab.com.au/refinancing →</a></td>
+                        </tr>
+                        <tr>
+                            <td>Commonwealth Bank</td>
+                            <td><a href="https://www.commbank.com.au/home-loans/refinance.html" target="_blank"
+                                    style="color: var(--accent-primary);">commbank.com.au/refinance →</a></td>
+                        </tr>
+                        <tr>
+                            <td>Westpac Investment</td>
+                            <td><a href="https://www.westpac.com.au/personal-banking/home-loans/investing-in-property/"
+                                    target="_blank" style="color: var(--accent-primary);">westpac.com.au/investing →</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Macquarie Investor</td>
+                            <td><a href="https://www.macquarie.com.au/home-loans/investor-home-loans.html"
+                                    target="_blank" style="color: var(--accent-primary);">macquarie.com.au/investor
+                                    →</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-i18n="lenders-footer">Last updated: January 2026 | For personal reference only—consult professionals
+                for advice</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia-Indonesia Tax Treaty | The Indonesia Move</title>
+    <meta name="description"
+        content="Understanding the Double Tax Agreement, resident vs non-resident rates, and managing rental income while living in Indonesia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🌴</span>
+                <span class="logo-text">The Indonesia Move</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav-dashboard">Dashboard</a></li>
+                <li><a href="timeline.html" class="nav-link" data-i18n="nav-timeline">Timeline</a></li>
+                <li><a href="expat-lenders.html" class="nav-link" data-i18n="nav-lenders">Lenders</a></li>
+                <li><a href="bank-checklist.html" class="nav-link" data-i18n="nav-checklist">Bank Checklist</a></li>
+                <li><a href="visa-checklist.html" class="nav-link" data-i18n="nav-visa-checklist">Visa Checklist</a>
+                </li>
+                <li><a href="tax-treaty.html" class="nav-link active" data-i18n="nav-tax">Tax Treaty</a></li>
+                <li><a href="visa-options.html" class="nav-link" data-i18n="nav-visa">Visa Options</a></li>
+                <li><a href="property-managers.html" class="nav-link" data-i18n="nav-property">Property Managers</a>
+                </li>
+                <li><a href="indonesia-guide.html" class="nav-link" data-i18n="nav-indo-guide">Indo Guide</a></li>
+                <li class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">🇺🇸 English</button>
+                    <button class="lang-btn" data-lang="id">🇮🇩 Bahasa</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero" style="padding-bottom: 2rem;">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero-badge-tax">Tax Strategy</span>
+                <h1 data-i18n="tax-title">Australia-Indonesia<br><span class="gradient-text">Tax Treaty</span></h1>
+                <p class="hero-subtitle" data-i18n="tax-subtitle">Understanding the Double Tax Agreement and avoiding
+                    paying tax twice on your rental income.</p>
+            </div>
+        </section>
+
+        <!-- Your Recommendation -->
+        <section class="section">
+            <div class="alert-card" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+                <div class="alert-icon">✅</div>
+                <div class="alert-content">
+                    <h3 style="color: var(--success);" data-i18n="rec-title">Recommended: Stay Australian Tax Resident
+                        (Year 1)</h3>
+                    <p data-i18n="rec-desc">Without a 2+ year employment contract in Indonesia, you will stay an
+                        Australian tax resident. This is <strong>good news</strong>—it keeps your tax much lower. Under
+                        the 2026 rules, only a 2+ year contract makes you a "non-resident" (who pays 30% tax from dollar
+                        one).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resident vs Non-Resident -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="rates-title">Resident vs Non-Resident Tax Rates</h2>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="table-income">Taxable Income</th>
+                            <th data-i18n="table-resident">Resident Rate</th>
+                            <th data-i18n="table-non-resident">Non-Resident Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td>$0 – $18,200</td>
+                            <td class="positive" data-i18n="tax-rate-0">0% (Tax Free)</td>
+                            <td class="negative" data-i18n="tax-rate-30">30%</td>
+                        </tr>
+                        <tr>
+                            <td>$18,201 – $45,000</td>
+                            <td class="positive" data-i18n="tax-rate-19">19%</td>
+                            <td class="negative" data-i18n="tax-rate-30">30%</td>
+                        </tr>
+                        <tr>
+                            <td>$45,001 – $135,000</td>
+                            <td data-i18n="tax-rate-32">32.5%</td>
+                            <td class="negative" data-i18n="tax-rate-30-range">30% (first $135k)</td>
+                        </tr>
+                        <tr>
+                            <td>$135,001+</td>
+                            <td data-i18n="tax-rate-37">37%</td>
+                            <td data-i18n="tax-rate-45">45%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note" data-i18n="tax-table-note">Non-residents have NO tax-free threshold. First dollar is
+                taxed at 30%.</p>
+
+            <!-- Tax Free Callout -->
+            <div class="alert-card"
+                style="margin-top: 2rem; background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3);">
+                <div class="alert-icon">💡</div>
+                <div class="alert-content">
+                    <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;" data-i18n="tax-threshold-alert">
+                        <strong>Golden Rule:</strong> If your taxable Australian income is under
+                        <strong>$18,200</strong>, you pay <strong>$0 tax</strong> in Australia. Since your expected
+                        rental profit is ~$12k, you effectively pay no tax while staying an AU resident.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your Tax Calculation -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="tax-calc-title">Your Estimated Tax Position</h2>
+
+            <div class="info-cards">
+                <div class="content-section" style="flex: 1;">
+                    <h2 data-i18n="tax-income-subtitle">Annual Income & Deductions</h2>
+                    <table class="data-table" style="margin-bottom: 0;">
+                        <tbody>
+                            <tr>
+                                <td data-i18n="tax-item-income">Annual rental income</td>
+                                <td style="text-align: right;"><strong>$34,800</strong></td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tax-item-interest">Less: Loan interest (~5.39%)</td>
+                                <td style="text-align: right;">−$14,850</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tax-item-pm">Less: Property management (7%)</td>
+                                <td style="text-align: right;">−$2,436</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tax-item-rates">Less: Rates, strata, insurance (est.)</td>
+                                <td style="text-align: right;">−$3,500</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tax-item-repairs">Less: Repairs, maintenance (est.)</td>
+                                <td style="text-align: right;">−$2,000</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong data-i18n="tax-total-label">Taxable rental income</strong></td>
+                                <td style="text-align: right;"><strong>$12,014</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="content-section" style="flex: 1;">
+                    <h2 data-i18n="tax-comp-subtitle">Tax Comparison</h2>
+                    <table class="data-table" style="margin-bottom: 0;">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="color: var(--success); font-weight: 600;"
+                                    data-i18n="tax-resident-label">As Australian Resident
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tax-comp-res-val">Taxable income: $12,014</td>
+                                <td style="text-align: right;" data-i18n="tax-comp-res-note">Under threshold</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong data-i18n="tax-payable-label">Tax payable</strong></td>
+                                <td style="text-align: right;" class="positive"><strong
+                                        data-i18n="tax-payable-zero">$0*</strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="height: 16px;"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: var(--danger); font-weight: 600;"
+                                    data-i18n="tax-nonres-label">As Non-Resident</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="tax-comp-nonres-val">Taxable income: $12,014 @ 30%</td>
+                                <td style="text-align: right;" data-i18n="tax-comp-nonres-note">Flat rate</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n="tax-payable-label-2">Tax payable</strong></td>
+                                <td style="text-align: right;" class="negative"><strong>$3,604</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="table-note" data-i18n="tax-comp-note">*Assumes rental income is your only Australian
+                        income.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Double Tax Agreement -->
+        <section class="section">
+            <h2 class="section-title">The Double Tax Agreement (DTA)</h2>
+
+            <div class="content-section">
+                <h2>How It Works</h2>
+                <p>Australia and Indonesia have a <strong>Double Tax Agreement</strong> that prevents you from being
+                    taxed twice on the same income. Here's how it applies to your situation:</p>
+
+                <div class="info-cards" style="margin: var(--spacing-lg) 0;">
+                    <div class="info-card">
+                        <h4 data-i18n="tax-au-income-title">🇦🇺 Australian Rental Income</h4>
+                        <ul>
+                            <li data-i18n="tax-au-income-1">Taxed in Australia first</li>
+                            <li data-i18n="tax-au-income-2">Must lodge Australian tax return</li>
+                            <li data-i18n="tax-au-income-3">Can claim all property deductions</li>
+                            <li data-i18n="tax-au-income-4">Pay at resident or non-resident rates</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4 data-i18n="tax-id-req-title">🇮🇩 Indonesian Requirements</h4>
+                        <ul>
+                            <li data-i18n="tax-id-req-1">If Indo tax resident (183+ days)</li>
+                            <li data-i18n="tax-id-req-2">Declare worldwide income</li>
+                            <li data-i18n="tax-id-req-3">Get credit for Australian tax paid</li>
+                            <li data-i18n="tax-id-req-4">4-year exemption may apply</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 data-i18n="tax-credit-title">Foreign Tax Credit</h3>
+                <p data-i18n="tax-credit-desc">The key mechanism is the <strong>foreign tax credit</strong>:</p>
+                <ul>
+                    <li data-i18n="tax-credit-1">If you pay tax on rental income in Australia, you get a credit in
+                        Indonesia</li>
+                    <li data-i18n="tax-credit-2">You don't pay tax twice on the same income</li>
+                    <li data-i18n="tax-credit-3">The country where income is sourced (Australia) has first taxing rights
+                        on property income</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tax Residency Rules -->
+        <section class="section">
+            <h2 class="section-title">2026 Tax Residency Rules</h2>
+
+            <div class="content-section">
+                <h2>The "Ceasing Residency" Test</h2>
+                <p>Under the new rules effective July 2026, to become a <strong>non-resident for tax</strong>, you must
+                    satisfy ALL of these:</p>
+
+                <div class="info-cards" style="margin: var(--spacing-lg) 0;">
+                    <div class="info-card" style="border-left: 3px solid var(--danger);">
+                        <h4 data-i18n="tax-rule-contract-title">❌ Employment Contract</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="tax-rule-contract-desc">
+                            No 2+ year contract means you stay a
+                            resident. <strong>Staying a resident is BETTER for your tax.</strong></p>
+                    </div>
+                    <div class="info-card" style="border-left: 3px solid var(--success);">
+                        <h4 data-i18n="tax-rule-accom-title">✅ Overseas Accommodation</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="tax-rule-accom-desc">
+                            Secured accommodation in Indonesia.
+                            <strong data-i18n="tax-rule-yes">Assumed yes.</strong>
+                        </p>
+                    </div>
+                    <div class="info-card" style="border-left: 3px solid var(--success);">
+                        <h4 data-i18n="tax-rule-family-title">✅ Family Relocating</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="tax-rule-family-desc">
+                            Spouse and children moving with you.
+                            <strong data-i18n="tax-rule-yes-family">Yes (wife and baby).</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alert-card"
+                    style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+                    <div class="alert-icon">✅</div>
+                    <div class="alert-content">
+                        <h3 style="color: var(--success);" data-i18n="tax-rule-alert-title">This Is Actually Good News
+                        </h3>
+                        <p data-i18n="tax-rule-alert-desc">Since you don't qualify as a non-resident, you'll remain an
+                            <strong>Australian tax
+                                resident</strong>. This means you get the $18,200 tax-free threshold and lower marginal
+                            rates on your rental income!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-section" style="margin-top: var(--spacing-lg);">
+                    <h3 data-i18n="tax-future-title">What happens after 2 years?</h3>
+                    <p data-i18n="tax-future-desc">If you stay in Indonesia for more than 2 years AND secure a long-term
+                        job contract, the ATO will
+                        likely consider you a <strong>non-resident</strong> from that point onwards.</p>
+                    <ul>
+                        <li data-i18n="tax-future-1"><strong>The Change:</strong> You lose the tax-free threshold.</li>
+                        <li data-i18n="tax-future-2"><strong>The Impact:</strong> Your rental income tax increases to a
+                            flat 30%.</li>
+                        <li data-i18n="tax-future-3"><strong>The Strategy:</strong> Enjoy the resident rates for the
+                            first 2 years. If your stay
+                            becomes permanent, we need to adjust your tax planning.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Indonesian Tax -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="tax-id-title">Indonesian Tax Obligations</h2>
+
+            <div class="content-section">
+                <h2 data-i18n="tax-npwp-subtitle">NPWP Registration</h2>
+                <p data-i18n="tax-npwp-desc">If you become an Indonesian tax resident (183+ days in 12 months), you may
+                    need to register for an
+                    <strong>NPWP</strong> (Nomor Pokok Wajib Pajak - Tax Identification Number).
+                </p>
+
+                <h3 data-i18n="tax-npwp-req-title">Required Documents</h3>
+                <ul>
+                    <li data-i18n="tax-npwp-req-1">Valid passport with visa (KITAS/KITAP preferred)</li>
+                    <li data-i18n="tax-npwp-req-2">Proof of Indonesian address (rental contract)</li>
+                    <li data-i18n="tax-npwp-req-3">KITAS or KITAP (Stay Permit)</li>
+                    <li data-i18n="tax-npwp-req-4">Letter of employment (if working)</li>
+                </ul>
+
+                <h3 data-i18n="tax-exempt-title">4-Year Exemption</h3>
+                <p data-i18n="tax-exempt-desc">Indonesia offers a potential <strong>4-year exemption</strong> on
+                    foreign-sourced income for new
+                    expats:</p>
+                <ul>
+                    <li data-i18n="tax-exempt-1">May apply to your Australian rental income</li>
+                    <li data-i18n="tax-exempt-2">Discuss with Indonesian tax advisor upon arrival</li>
+                    <li data-i18n="tax-exempt-3">Conditions and eligibility vary</li>
+                </ul>
+
+                <h3 data-i18n="tax-deadlines-title">Filing Deadlines</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4 data-i18n="tax-dead-au-title">🇦🇺 Australia</h4>
+                        <ul>
+                            <li data-i18n="tax-dead-au-1">Tax year: July 1 – June 30</li>
+                            <li data-i18n="tax-dead-au-2">Due: October 31</li>
+                            <li data-i18n="tax-dead-au-3">Extension with tax agent</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4 data-i18n="tax-dead-id-title">🇮🇩 Indonesia</h4>
+                        <ul>
+                            <li data-i18n="tax-dead-id-1">Tax year: January 1 – December 31</li>
+                            <li data-i18n="tax-dead-id-2">Due: March 31</li>
+                            <li data-i18n="tax-dead-id-3">Monthly withholding varies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CGT Warning -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="tax-cgt-title">Capital Gains Tax Warning</h2>
+
+            <div class="alert-card warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <h3 data-i18n="tax-cgt-alert-title">You Lose Main Residence Exemption When You Rent It Out</h3>
+                    <p data-i18n="tax-cgt-alert-desc">From the day you start renting your property, CGT applies when you
+                        eventually sell. However, the
+                        <strong>6-year absence rule</strong> may provide partial protection if you move back in before
+                        selling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 data-i18n="tax-cgt-calc-subtitle">Example CGT Calculation</h2>
+                <p data-i18n="tax-cgt-calc-desc">If you sell for $750k after 2 years of renting:</p>
+
+                <table class="data-table">
+                    <tbody>
+                        <tr>
+                            <td data-i18n="tax-cgt-buy">Purchase price (estimated)</td>
+                            <td style="text-align: right;">$600,000</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tax-cgt-sell">Sale price</td>
+                            <td style="text-align: right;">$750,000</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tax-cgt-gain">Capital gain</td>
+                            <td style="text-align: right;">$150,000</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tax-cgt-disc">50% discount (held >12 months)</td>
+                            <td style="text-align: right;">−$75,000</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong data-i18n="tax-cgt-taxable">Taxable capital gain</strong></td>
+                            <td style="text-align: right;"><strong>$75,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="tax-cgt-rate">Tax at marginal rate (~37%)</td>
+                            <td style="text-align: right;" class="negative">~$27,750</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 data-i18n="tax-cgt-min-title">Strategies to Minimize CGT</h3>
+                <ul>
+                    <li data-i18n="tax-cgt-min-1">Keep property 1-2 years after returning to Australia (if you move back
+                        in)</li>
+                    <li data-i18n="tax-cgt-min-2">Maintain good records of all improvements (add to cost base)</li>
+                    <li data-i18n="tax-cgt-min-3">Get professional advice before selling</li>
+                    <li data-i18n="tax-cgt-min-4">Use the 6-year absence rule if you return within 6 years</li>
+                </ul>
+
+                <h3 data-i18n="tax-cgt-nonres-title">Non-Resident CGT Withholding</h3>
+                <p data-i18n="tax-cgt-nonres-desc">If you're a non-resident when selling:</p>
+                <ul>
+                    <li data-i18n="tax-cgt-nonres-1"><strong>15% withholding</strong> on the sale price (increased from
+                        12.5% in 2025)</li>
+                    <li data-i18n="tax-cgt-nonres-2">Sale price $750k = $112,500 withheld at settlement</li>
+                    <li data-i18n="tax-cgt-nonres-3">You still lodge tax return to calculate actual CGT</li>
+                    <li data-i18n="tax-cgt-nonres-4">May get refund if actual CGT is less than withholding</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section class="section">
+            <h2 class="section-title" data-i18n="tax-resources-title">Useful Resources</h2>
+
+            <div class="card-grid">
+                <a href="https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/your-tax-residency/foreign-and-temporary-residents"
+                    target="_blank" class="resource-card">
+                    <div class="card-icon">🏛️</div>
+                    <h3 data-i18n="tax-res-ato-title">ATO - Foreign Residents</h3>
+                    <p data-i18n="tax-res-ato-desc">Official ATO guidance on foreign and temporary residents</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="https://www.odintax.com/resources/rental-properties-guide/" target="_blank"
+                    class="resource-card">
+                    <div class="card-icon">📚</div>
+                    <h3 data-i18n="tax-res-odin-title">Odin Tax - Rental Guide</h3>
+                    <p data-i18n="tax-res-odin-desc">Comprehensive rental property tax guide for expats</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="https://www.odintax.com/resources/indonesia-australia-tax-treaty/" target="_blank"
+                    class="resource-card">
+                    <div class="card-icon">🤝</div>
+                    <h3 data-i18n="tax-res-dta-title">Indonesia-Australia Tax Treaty</h3>
+                    <p data-i18n="tax-res-dta-desc">Detailed breakdown of the Double Tax Agreement</p>
+                    <span class="card-arrow">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-i18n="tax-footer">Last updated: January 2026 | For personal reference only—consult professionals for
+                advice</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
