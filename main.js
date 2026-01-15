@@ -54,25 +54,34 @@ function initBottomNav() {
     const path = window.location.pathname;
     const page = path.split("/").pop() || 'index.html';
 
+    // SVG Icons
+    const icons = {
+        dashboard: `<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>`,
+        timeline: `<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>`,
+        checklist: `<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`,
+        visa: `<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>`,
+        more: `<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>`
+    };
+
     nav.innerHTML = `
         <a href="index.html" class="bottom-nav-item ${page === 'index.html' || page === '' ? 'active' : ''}">
-            <span class="bottom-nav-icon">🏠</span>
+            ${icons.dashboard}
             <span class="bottom-nav-label" data-i18n="nav-dashboard">Dashboard</span>
         </a>
         <a href="timeline.html" class="bottom-nav-item ${page === 'timeline.html' ? 'active' : ''}">
-            <span class="bottom-nav-icon">📅</span>
+            ${icons.timeline}
             <span class="bottom-nav-label" data-i18n="nav-timeline">Timeline</span>
         </a>
         <a href="bank-checklist.html" class="bottom-nav-item ${page === 'bank-checklist.html' ? 'active' : ''}">
-            <span class="bottom-nav-icon">✅</span>
+            ${icons.checklist}
             <span class="bottom-nav-label" data-i18n="nav-checklist">Checklist</span>
         </a>
         <a href="visa-checklist.html" class="bottom-nav-item ${page === 'visa-checklist.html' ? 'active' : ''}">
-            <span class="bottom-nav-icon">🛂</span>
+            ${icons.visa}
             <span class="bottom-nav-label" data-i18n="nav-visa-checklist">Visa</span>
         </a>
         <button class="bottom-nav-item" id="bottomNavMore">
-            <span class="bottom-nav-icon">⋯</span>
+            ${icons.more}
             <span class="bottom-nav-label" data-i18n="nav-more">More</span>
         </button>
     `;
